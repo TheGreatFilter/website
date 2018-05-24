@@ -1,0 +1,8 @@
+{
+	"presets": ["env"],
+	"plugins": [
+		"babel-plugin-syntax-jsx",
+		"babel-plugin-transform-react-jsx",
+		["babel-plugin-inferno", { "imports": true }]
+	]
+}
