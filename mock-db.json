@@ -1,0 +1,49 @@
+{
+	"models": [
+		{
+			"id": 1,
+			"name": "AK47",
+			"category": 1,
+			"author": "tgfp",
+			"created": 1486029172,
+			"fbx_hash": "",
+			"uv_hash": ""
+		},
+		{
+			"id": 2,
+			"name": "Thompson",
+			"category": 2,
+			"author": "tgfp",
+			"created": 1486029172,
+			"fbx_hash": "",
+			"uv_hash": ""
+		},
+		{
+			"id": 3,
+			"name": "Luger",
+			"category": 3,
+			"author": "tgfp",
+			"created": 1486029172,
+			"fbx_hash": "",
+			"uv_hash": ""
+		}
+	],
+	"skins": [
+		{
+			"id": 1,
+			"model_id": 1,
+			"name": "Standard",
+			"author": "tgfp",
+			"created": 1486029172
+		}
+	],
+	"items": [
+		{
+			"id": 1,
+			"model_id": 1,
+			"skin_id": 1,
+			"wear": 0.81783783,
+			"owner_id": "bill"
+		}
+	]
+}

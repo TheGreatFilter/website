@@ -35,6 +35,6 @@
 		"target": "ES5",
 		"typeRoots": ["./node_modules/@types"]
 	},
-	"include": ["src/ts/*.*", "webpack.config.ts"],
+	"include": ["webpack.config.ts"],
 	"exclude": ["node_modules"]
 }

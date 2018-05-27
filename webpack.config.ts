@@ -12,13 +12,13 @@ console.log("PRODUCTION?", IS_PROD);
 const config: webpack.Configuration = {
 	mode: IS_PROD ? "production" : "development",
 	devtool: IS_PROD ? undefined : "inline-source-map",
-	entry: "./src/index.tsx",
+	entry: "./src/Index.js",
 	output: {
 		path: DIST_DIR,
 		filename: "[name].bundle.js",
 	},
 	resolve: {
-		extensions: [".js", ".jsx", ".ts", ".tsx"],
+		extensions: [".js"],
 	},
 	performance: {
 		hints: IS_PROD ? "error" : false,
@@ -26,8 +26,8 @@ const config: webpack.Configuration = {
 	module: {
 		rules: [
 			{
-				test: /\.tsx?$/,
-				use: ["babel-loader", "ts-loader"],
+				test: /\.re$/,
+				use: ["bs-loader"],
 				exclude: /node_modules/,
 			},
 			{
@@ -57,7 +57,7 @@ const config: webpack.Configuration = {
 			verbose: true,
 		}),
 		new HtmlWebpackPlugin({
-			template: "src/index.pug",
+			template: "src/Index.pug",
 			filename: "index.html",
 		}),
 		new MiniCssExtractPlugin(),
