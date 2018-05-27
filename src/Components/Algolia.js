@@ -4,9 +4,8 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var Dom = require("react-instantsearch/dom");
 
-function make(className, apiKey, appId, indexName, children) {
+function make(apiKey, appId, indexName, children) {
   return ReasonReact.wrapJsForReason(Dom.InstantSearch, {
-              className: className,
               apiKey: apiKey,
               appId: appId,
               indexName: indexName

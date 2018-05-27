@@ -20,6 +20,11 @@
 	],
 	"suffix": ".js",
 	"namespace": true,
-	"bs-dependencies": ["reason-react", "bs-webapi", "@glennsl/bs-json"],
+	"bs-dependencies": [
+		"reason-react",
+		"bs-webapi",
+		"@glennsl/bs-json",
+		"bs-typed-glamor"
+	],
 	"refmt": 3
 }

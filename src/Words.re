@@ -4,7 +4,8 @@ type words =
   | Treasury
   | Governance
   | Stats
-  | Login;
+  | Login
+  | Upload;
 
 type language =
   | English
@@ -19,12 +20,13 @@ type language =
 
 let toEnglish = words =>
   switch (words) {
-  | Market => "Market"
-  | Games => "Games"
+  | Market => "Trade"
+  | Games => "Play"
   | Treasury => "Treasury"
-  | Governance => "Governance"
+  | Governance => "Vote"
   | Stats => "Stats"
   | Login => "Login"
+  | Upload => "Upload"
   };
 
 let translate = (language, words) =>

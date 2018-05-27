@@ -2,7 +2,7 @@
 'use strict';
 
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var Route$ReactTemplate = require("./Route.js");
+var Route$ReactTemplate = require("../Route.js");
 
 var component = ReasonReact.statelessComponent("Link");
 

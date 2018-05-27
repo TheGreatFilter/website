@@ -3,9 +3,7 @@
 
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var App$ReactTemplate = require("./App.js");
-
-require("./Index.sass");
+var App$ReactTemplate = require("./Components/App.js");
 
 ReactDOMRe.renderToElementWithId(ReasonReact.element(/* None */0, /* None */0, App$ReactTemplate.make(/* array */[])), "app");
 

@@ -5,17 +5,19 @@
 function toEnglish(words) {
   switch (words) {
     case 0 : 
-        return "Market";
+        return "Trade";
     case 1 : 
-        return "Games";
+        return "Play";
     case 2 : 
         return "Treasury";
     case 3 : 
-        return "Governance";
+        return "Vote";
     case 4 : 
         return "Stats";
     case 5 : 
         return "Login";
+    case 6 : 
+        return "Upload";
     
   }
 }

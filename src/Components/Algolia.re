@@ -3,15 +3,14 @@ module InstantSearch = {
   external reactClass : ReasonReact.reactClass = "InstantSearch";
   [@bs.deriving abstract]
   type jsProps = {
-    className: string,
     apiKey: string,
     appId: string,
     indexName: string,
   };
-  let make = (~className, ~apiKey, ~appId, ~indexName, children) =>
+  let make = (~apiKey, ~appId, ~indexName, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,
-      ~props=jsProps(~className, ~apiKey, ~appId, ~indexName),
+      ~props=jsProps(~apiKey, ~appId, ~indexName),
       children,
     );
 };
